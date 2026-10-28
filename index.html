@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dino Runner | Daivik Bhargava</title>
+<meta name="description" content="An endless-runner game written in plain JavaScript with classes, by Daivik Bhargava.">
+<meta name="theme-color" content="#13213A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/engine.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Dino Runner</h1>
+    <p>Jump the cacti, duck the birds, and see how far you get. The game speeds up as you go.</p>
+  </header>
+
+  <canvas id="game" width="800" height="260" role="img"
+    aria-label="Dino Runner game. Press Space or tap to jump, Down arrow to duck, P to pause."></canvas>
+
+  <div class="controls" aria-label="Game controls">
+    <button id="jump" type="button">Jump</button>
+    <button id="duck" type="button">Duck (hold)</button>
+    <button id="pause" type="button">Pause</button>
+  </div>
+  <p id="status" class="status" role="status" aria-live="polite"></p>
+
+  <section class="help" aria-labelledby="how-h">
+    <h2 id="how-h">How to play</h2>
+    <dl>
+      <div><dt>Jump</dt><dd>Space, Up arrow or W; or tap the game. Tap briefly for a small hop.</dd></div>
+      <div><dt>Duck</dt><dd>Down arrow or S (hold). In the air, it makes you land faster.</dd></div>
+      <div><dt>Pause</dt><dd>P or Esc. The game also pauses when you switch tabs.</dd></div>
+    </dl>
+  </section>
+
+  <footer>
+    <p>Written in plain JavaScript using classes (no libraries). <a href="https://github.com/Daivik-B/dino-runner">Source code on GitHub</a> · <a href="https://daivik-b.github.io/">My portfolio</a></p>
+  </footer>
+</main>
+</body>
+</html>
